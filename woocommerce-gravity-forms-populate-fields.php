@@ -40,7 +40,6 @@ class WC_Gravity_Forms_Populate_Fields {
 		add_filter( 'gform_pre_render', [ $this, 'populate_attributes' ] );
 		add_filter( 'gform_pre_validation', [ $this, 'populate_attributes' ] );
 		add_filter( 'gform_pre_submission_filter', [ $this, 'populate_attributes' ] );
-		add_filter( 'gform_admin_pre_render', [ $this, 'populate_attributes' ] );
 	}
 
 	public function populate_attributes( $form ) {

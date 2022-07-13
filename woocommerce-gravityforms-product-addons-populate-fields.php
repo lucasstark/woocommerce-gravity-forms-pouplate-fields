@@ -1,13 +1,23 @@
 <?php
 /*
- *  Plugin Name:  WooCommerce Gravity Forms Populate Fields
- *  Description:  Allows Gravity Forms Fields to be populated via product attributes.  Designed to work with WooCommerce Gravity Forms Product Addons only.
- *  Version: 1.0
- *  Author: Element Stark
- *  Author URI:  https://www.elementstark.com
- *  Tested up to: 5.3
- *
-*/
+ * Plugin Name:  WooCommerce Gravity Forms Populate Fields
+ * Description:  Allows Gravity Forms Fields to be populated via product attributes.  Designed to work with WooCommerce Gravity Forms Product Addons only.
+ * Plugin URI:
+ * Version: 1.0.1
+ * Author: Element Stark
+ * Author URI: https://www.elementstark.com/
+ * Developer: Lucas Stark
+ * Developer URI: http://www.elementstark.com/
+ * Requires at least: 3.1
+ * Tested up to: 6.0
+
+ * Copyright: © 2009-2022 Element Stark.
+ * License: GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+ * WC requires at least: 3.0.0
+ * WC tested up to: 6.7
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

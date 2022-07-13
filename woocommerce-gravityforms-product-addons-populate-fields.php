@@ -55,15 +55,16 @@ class WC_Gravity_Forms_Populate_Fields {
 	public function populate_attributes( $form ) {
 		global $product; //we are assuming this is on the single product page, not being used with the product_page shortcode.
 
-		if (empty($product)) {
+		if ( empty( $product ) ) {
 			return $form;
 		}
 
 		foreach ( $form['fields'] as &$field ) {
 
-			if ( $field->type != 'select' || strpos( $field->inputName, 'wc_attribute_' ) === false ) {
+			if ( ( $field->type != 'select' && $field->type != 'option' ) || strpos( $field->inputName, 'wc_attribute_' ) === false ) {
 				continue;
 			}
+
 			$attribute_name = str_replace( 'wc_attribute_', '', $field->inputName );
 			$attributes     = $product->get_attributes();
 
